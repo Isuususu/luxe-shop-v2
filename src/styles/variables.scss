@@ -1,0 +1,62 @@
+//Navbar
+$navbarShoppingCartIconBg: #f27012;
+$navbarTopBg: rgb(68, 68, 68);
+// $navbarBottomBg: linear-gradient(
+//   270deg,
+//   rgba(70, 7, 133, 1) 0%,
+//   rgba(200, 109, 215, 1) 100%
+// );
+$navbarBottomBg: #fff;
+$navbarFontColor: rgb(71, 71, 71);
+
+//Menu
+$menuAvatarBg: linear-gradient(
+  90deg,
+  rgba(70, 7, 133, 1) 0%,
+  rgba(200, 109, 215, 1) 100%
+);
+$menuAvatarTextColor: #fff;
+
+//Cart
+$cartBackground: #ffffff;
+$cardPayButtonBg: linear-gradient(
+  90deg,
+  rgba(70, 7, 133, 1) 0%,
+  rgba(200, 109, 215, 1) 100%
+);
+$cardPayButtonTextColor: #fff;
+$cardFontColor: #1b1b1b;
+$cardProductBg: #ecebeb;
+
+//Home page
+$homeBg: linear-gradient(
+  90deg,
+  rgba(238, 244, 255, 1) 0%,
+  rgba(245, 247, 251, 1) 28%
+);
+$homeHeadlineTextColor: #303030;
+$homeCatBtnActive: rgba(70, 7, 133, 1);
+
+//Product card
+$productCardBg: #ffffff;
+$productCardTextColor: #2e2e2e;
+
+//ProductDetail
+$productSecondaryFontColor: #f27012;
+$productAddToCartBtnBg: linear-gradient(
+  90deg,
+  rgba(70, 7, 133, 1) 0%,
+  rgba(200, 109, 215, 1) 100%
+);
+$productAddToCartBtnText: #fff;
+// $productDetailBg: #f5f7fb;
+$productDetailBg: linear-gradient(
+  90deg,
+  rgba(238, 244, 255, 1) 0%,
+  rgba(245, 247, 251, 1) 28%
+);
+$productDetailAddToCartBg: #fff;
+
+//HeroBanner
+$heroBannerBg: #dfdfdf;
+$herBannerButtonBg: #f27012;

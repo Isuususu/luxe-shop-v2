@@ -1,0 +1,57 @@
+.home-container {
+  position: relative;
+  z-index: 2;
+  background: $homeBg;
+  // margin-top: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10vh 2vh 2vh 2vh;
+  &__headline {
+    color: $homeHeadlineTextColor;
+    position: relative;
+    margin-bottom: 1vh;
+    font-size: 2.5rem;
+    // &::before {
+    //   z-index: -1;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 50%;
+    //   transform: translate(-50%);
+    //   content: "";
+    //   width: 40%;
+    //   height: 13px;
+    //   background: #8f13f585;
+    // }
+  }
+  &__products {
+    width: 100%;
+    &:last-of-type {
+      & .swiper-wrapper {
+        // gap: 10px;
+        // width: 100% !important;
+        & .swiper-slide {
+          width: auto;
+          flex-shrink: 1;
+        }
+      }
+    }
+  }
+  &__category-selector {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1vh;
+    margin-top: 3vh;
+
+    &__button {
+      background: #fff;
+      transition: all 0.5s;
+      flex-shrink: 1;
+    }
+  }
+}
+
+.selected-cat {
+  background: $homeCatBtnActive;
+  color: #fff;
+}

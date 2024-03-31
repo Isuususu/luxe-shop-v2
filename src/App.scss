@@ -1,0 +1,162 @@
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
+@import "./styles/animations";
+
+@import "./components/Cart/cart";
+@import "./components/Footer/footer";
+
+@import "./components/Navbar/navbar";
+@import "./components/ProductCard/productCard";
+@import "./pages/Home/home";
+@import "./pages/ProductDetails/productDetails";
+// @import "../app/success/success";
+// @import "../components/Menu/menu";
+@import "./components/Search/Search";
+
+@import "./components/Reviews/reviews";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #333;
+}
+
+button {
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+.shopping-cart-icon {
+  @include shoppingCartIcon;
+}
+.left {
+  left: 0;
+  padding-right: 1.5vh;
+  right: auto;
+  border-radius: 0 25px 25px 0;
+}
+
+//Desktop layout
+.overflow-auto {
+  overflow: scroll;
+}
+
+.desktop-layout {
+  position: relative;
+  width: 466px;
+  height: 898px;
+  margin: auto;
+  padding: 10px 18px 0 18px;
+  overflow: hidden;
+  transform: scale(1);
+  background: url("/images/phone.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+  &__inner-wrapper {
+    overflow: auto;
+    height: 878px;
+    border-radius: 60px;
+  }
+}
+
+.desktop-scale {
+  transform: scale(1);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.desktop-layout__inner-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.desktop-layout__inner-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.shopping-cart-icon__desktop {
+  // right: 17px;
+  top: 150px;
+}
+
+.desktop__searchbar {
+  margin-top: 7vh;
+}
+
+// .desktop__searchbar-transition {
+//   right: 2vh;
+// }
+
+.desktop__buying-options {
+  width: 430px;
+  left: 2vh;
+  bottom: 1vh;
+  border-radius: 0 0 60px 60px;
+}
+
+.desktop__home-container {
+  padding: 150px 2vh 2vh 2vh;
+}
+
+.desktop__product-detail-container {
+  padding: 150px 2vh 2vh 2vh;
+}
+
+.desktop__navbar-bottom {
+  // width: 430px;
+  // bottom: 10px;
+  border-radius: 0 0 60px 60px;
+}
+
+.desktop__cart-container {
+  top: 10px;
+  left: 18px;
+  width: 430px;
+  height: 878px;
+  border-radius: 60px;
+  padding-top: 50px;
+}
+
+.desktop__blur {
+  margin: auto;
+  width: 430px;
+  height: 878px;
+  margin-top: 10px;
+  border-radius: 50px;
+}

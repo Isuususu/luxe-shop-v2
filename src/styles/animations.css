@@ -1,0 +1,25 @@
+.blur {
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+}
+
+.searchbar-transition {
+  width: 30px !important;
+  border-radius: 15px 0 0 15px;
+  background: #fff !important;
+  box-shadow: 9px 9px 43px 1px rgba(110, 38, 243, 0.267);
+}
+
+.searchform-transition {
+  width: 100% !important;
+}
+
+.search-full-width {
+  width: 100%;
+}/*# sourceMappingURL=animations.css.map */
