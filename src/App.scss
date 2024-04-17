@@ -76,6 +76,7 @@ input {
 }
 
 //Desktop layout
+//Only for presentation purposes
 .overflow-auto {
   overflow: scroll;
 }
@@ -145,7 +146,7 @@ input {
 .desktop__navbar-bottom {
   // width: 430px;
   // bottom: 10px;
-  border-radius: 0 0 60px 60px;
+  border-radius: 0 0 50px 50px;
 }
 
 .desktop__cart-container {
@@ -161,6 +162,12 @@ input {
   margin: auto;
   width: 430px;
   height: 878px;
-
   border-radius: 50px;
+}
+
+//For screen height bigger than 768px
+@media screen and (min-height: 770px) {
+  .desktop-layout {
+    height: 100vh;
+  }
 }

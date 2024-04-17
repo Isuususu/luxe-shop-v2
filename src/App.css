@@ -183,7 +183,7 @@
   align-items: center;
   background: #fff;
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
   z-index: 98;
   width: 100%;
 }
@@ -741,7 +741,7 @@ input {
 }
 
 .desktop__navbar-bottom {
-  border-radius: 0 0 60px 60px;
+  border-radius: 0 0 50px 50px;
 }
 
 .desktop__cart-container {
@@ -758,4 +758,10 @@ input {
   width: 430px;
   height: 878px;
   border-radius: 50px;
+}
+
+@media screen and (min-height: 770px) {
+  .desktop-layout {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=App.css.map */
